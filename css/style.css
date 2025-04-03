@@ -5,7 +5,7 @@
 
     --fundo-menu-lateral: #755f8a;
     --fundo-claro: #a6afb4;
-    --fundo-escuro: #254558;
+    --fundo-escuro: #2c546b;
 
     --borda-clara: #38E0F2;
     --borda-escura: #037F8C;
@@ -14,9 +14,9 @@
     --texto-claro: #343a3d;
     --texto-branco: #ecf8ff;
     --texto-hover: #2d5c61;
-    --texto-opaco: #81888c;
+    --texto-opaco: #2c2e30;
 
-    --cor-detalhes: #8d5792cc;
+    --cor-detalhes: #501055ea;
 
     --texto-titulo-claro: #33737a;
     --texto-titulo-escuro: #037F8C;
@@ -26,7 +26,7 @@
 }
 /* Css geral */
 body{ 
-font-family: 'Courier New', Courier, monospace ;
+font-family:'Courier New', Courier, monospace ;
 color: var(--texto-escuro);
 background: var(--fundo-escuro);  
 
@@ -135,5 +135,58 @@ a{
     #header {
         left: -300px;
     }
+}
+
+/* menu header */
+
+.nav-menu * {
+    padding:0 ;
+    margin: 0;
+    list-style: none;
+}
+.nav-menu {
+    padding: 30px 0 0 0;
+}
+
+.nav-menu>ul>li {
+    position: relative;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.nav-menu a,
+.nav-menu:focus {
+    display: flex;
+    align-items: center;
+    color: var(--texto-opaco);
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.nav-menu a i,
+.nav-menu:focus i {
+    font-size: 22px;
+    padding-right: 10px;
+    color: rgb(36, 57, 100);
+    font-weight: 400;
+} 
+
+.nav-menu a:hover,
+.nav-menu .active, /* click */
+.nav-menu .active:focus, 
+.nav-menu li:hover> a {
+    text-decoration: none;
+    color: var(--texto-claro);
+}
+
+.nav-menu a:hover i,
+.nav-menu .active i, /* click */
+.nav-menu .active:focus i, 
+.nav-menu li:hover> a i {
+
+    color: var(--cor-detalhes);
+    font-weight: 400;
 }
 
