@@ -190,3 +190,15 @@ a{
     font-weight: 400;
 }
 
+/* Hero */
+#hero {
+    width: 100%;
+    height: 100vh; /* view ocupe o contener */
+    background: url("../img/bg-hero.jpg.jpg");
+    /* criar img na I.A */
+    background-size: cover;
+    position: relative;
+}
+
+
+/* estrutura base - corpo */
