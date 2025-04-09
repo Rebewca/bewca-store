@@ -10,7 +10,7 @@
     --borda-clara: #38E0F2;
     --borda-escura: #037F8C;
 
-    --texto-escuro: #0c0a0a;
+    --texto-escuro: #fafff2;
     --texto-claro: #343a3d;
     --texto-branco: #ecf8ff;
     --texto-hover: #2d5c61;
@@ -194,10 +194,50 @@ a{
 #hero {
     width: 100%;
     height: 100vh; /* view ocupe o contener */
-    background: url("../img/bg-hero.jpg.jpg");
+    background: url("../img/bg-hero.jpg.jpg") center; 
     /* criar img na I.A */
     background-size: cover;
     position: relative;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    background-color: rgba(31, 31, 31, 0.5);
+}
+
+#hero .hero-container {
+    z-index: 3;
+    position: relative;
+    min-width: 300px;
+    
+}
+#hero h2 {
+    margin: 0;
+    font-size: 100px;
+    font-weight: 900px;
+    line-height: 1; /* altura da linha */
+    color: #d1dddf;
+
+}
+h2 {
+    background-color: #2d3c3d;
+}
+
+#hero p{
+
+columns: #fff;
+margin-bottom: 50px;
+}
+
+#hero p span {
+    color: #755f8a;
+    padding-bottom: 2px;
+    letter-spacing: -1px;
+    border-bottom: 3px solid #000000;
+    
 }
 
 
