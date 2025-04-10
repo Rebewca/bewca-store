@@ -40,7 +40,7 @@
         select('body').classList.toggle('mobile-nav-active')
         this.classList.toggle('bi-list')
         this.classList.toggle('bi-x') //modo expandir
-             
+
     })
 
 
@@ -51,10 +51,17 @@
         let typed_strings = typed.getAttribute('data-typed-items')
         typed_strings = typed_strings.split(',')
 
-        new Typed('.typed',{
+        new Typed('.typed', {
             strings: typed_strings,
-        })
+            loop: true, // verdadeiro 
+            typeSpeed: 90, //velocidade digitação
+            backSpeed: 100, //velocidade devagar
+            backDelay: 1000,// tempo de espera
+
+        });
     }
+
+
 
 
 

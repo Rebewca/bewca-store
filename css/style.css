@@ -1,11 +1,11 @@
 /* variavel das cores */
 :root {
 
-    --background-color: rgba(72, 111, 165, 0.555);
+    --background-color: rgba(24, 34, 48, 0.555);
 
     --fundo-menu-lateral: #755f8a;
     --fundo-claro: #a6afb4;
-    --fundo-escuro: #2c546b;
+    --fundo-escuro: #15242c;
 
     --borda-clara: #38E0F2;
     --borda-escura: #037F8C;
@@ -135,6 +135,13 @@ a{
     #header {
         left: -300px;
     }
+    #main {
+        margin-left: 0;
+    }
+    .container {
+        padding-left: 12px;
+        padding-right: 12px ;
+    }
 }
 
 /* menu header */
@@ -197,6 +204,7 @@ a{
     background: url("../img/bg-hero.jpg.jpg") center; 
     /* criar img na I.A */
     background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
 }
 
@@ -242,3 +250,13 @@ margin-bottom: 50px;
 
 
 /* estrutura base - corpo */
+
+#main {
+    margin-left: 300px;
+
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
