@@ -10,7 +10,7 @@
     --borda-clara: #38E0F2;
     --borda-escura: #037F8C;
 
-    --texto-escuro: #fafff2;
+    --texto-escuro: #ffffff;
     --texto-claro: #343a3d;
     --texto-branco: #ecf8ff;
     --texto-hover: #2d5c61;
@@ -259,4 +259,38 @@ margin-bottom: 50px;
 .container {
     padding-left: 30px;
     padding-right: 30px;
+}
+
+
+/* seções e titulos */
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+    background:#755f8a; /* clara */
+}
+
+.section-bg{
+    background: #718b99;
+    color: var(--texto-claro);
+
+}
+
+/* classe h2 */
+
+.section-title {
+    padding-bottom: 30px;
+
+}
+
+.section-title h2 {
+    color: var(--texto-escuro);
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.section-title h2::after {
+    
 }
