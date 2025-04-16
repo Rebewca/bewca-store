@@ -263,6 +263,29 @@ margin-bottom: 50px;
     
 }
 
+@media(min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 1024px){
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 768px){
+    #hero  h2 {
+        font-size: 90px;
+        line-height: 1;
+        margin-bottom: 45px;
+    }
+
+    #hero p {
+        font-size: 28px;
+    }
+}
 
 /* estrutura base - corpo */
 
@@ -332,3 +355,9 @@ section {
     font-weight: 400;
     font-style: normal;
   }
+
+.sobre .content ul {
+    list-style: none;
+    padding: 4;
+   
+}
