@@ -1,5 +1,18 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* estilos fonts */
+/* bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  */
+
+
 /* variavel das cores */
-:root {
+ :root {
 
     --background-color: rgba(24, 34, 48, 0.555);
 
@@ -128,9 +141,11 @@ a{
 .mobile-nav-active #header {
     left: 0;
 }
+
 /* ajuste para o corpo do conteudo */
 
 /* menu responsivo */
+
 @media(max-width: 1199px) {
     #header {
         left: -300px;
@@ -292,5 +307,28 @@ section {
 }
 
 .section-title h2::after {
-    
+   content: "";
+   position: absolute;
+   background: #a9b0b1; 
+   width: 900px;
+   height: 3px;
+   display: block;
+   bottom: 0;
+   left: 0;
 }
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+
+/* sobre */
+
+.sobre .content h3 {
+    color: #183357;
+    font-weight: 700;
+    font-size: 39px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
