@@ -144,6 +144,22 @@ a{
 
 /* ajuste para o corpo do conteudo */
 
+/* estrutura base - corpo */
+
+#main {
+    margin-left: 300px;
+
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+
+
 /* menu responsivo */
 
 @media(max-width: 1199px) {
@@ -277,7 +293,7 @@ margin-bottom: 50px;
 
 @media (max-width: 768px){
     #hero  h2 {
-        font-size: 90px;
+        font-size: 60px;
         line-height: 1;
         margin-bottom: 45px;
     }
@@ -287,17 +303,6 @@ margin-bottom: 50px;
     }
 }
 
-/* estrutura base - corpo */
-
-#main {
-    margin-left: 300px;
-
-}
-
-.container {
-    padding-left: 30px;
-    padding-right: 30px;
-}
 
 
 /* seções e titulos */
@@ -360,4 +365,20 @@ section {
     list-style: none;
     padding: 4;
    
+}
+.sobre .content ul li {
+    margin-bottom: 20px;
+   /*  display: ; */
+   align-items: center;
+   justify-content: flex-start;
+}
+.sobre .content ul strong {
+    margin-right: 20px;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 6px;
+}
+.sobre .content ul i {
+    margin-right: 10px;
+    font-size: 20px;
 }
