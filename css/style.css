@@ -382,3 +382,41 @@ section {
     margin-right: 10px;
     font-size: 20px;
 }
+
+/* conquistas// vendas */
+.conquistas {
+    padding-bottom: 30px;
+
+}
+.conquistas .count-box {
+    padding: 30px;
+    width: 100%;
+}
+.conquistas .count-box i {
+    color: rgb(54, 41, 41);
+    font-size: 44px;
+    display: block;
+    line-height: 0;
+    float: left;
+    /* line-height:; */
+}
+.conquistas .count-box span {
+    font-size: 48px;
+    color: var(--texto-claro);
+    display: block;
+    line-height: 40px;
+    font-weight: 700;
+    margin-left: 60px;
+}
+.conquistas .count-box p {
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    color: rgb(46, 37, 37);
+
+}
+.conquistas .count-box strong {
+    font-weight: 800;
+}
+.conquistas .count-box i:hover, .conquistas .count-box span:hover {
+    color: var(--fundo-claro);
+}

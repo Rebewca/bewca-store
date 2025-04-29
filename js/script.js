@@ -61,6 +61,7 @@
         });
     }
 
+    new PureCounter();
 
 
 
