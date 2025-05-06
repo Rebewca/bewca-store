@@ -1,5 +1,4 @@
 /* google fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /* estilos fonts */
@@ -7,13 +6,10 @@
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  */
-
+} */
 
 /* variavel das cores */
- :root {
-
+:root {
     --background-color: rgba(24, 34, 48, 0.555);
 
     --fundo-menu-lateral: #755f8a;
@@ -37,49 +33,47 @@
     --sombra-clara: rgba(255, 255, 255, 1);
     --sombra-escura: rgba(31, 31, 31, 0.1);
 }
+
 /* Css geral */
-body{ 
-font-family:'Courier New', Courier, monospace ;
-color: var(--texto-escuro);
-background: var(--fundo-escuro);  
-
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--texto-escuro);
+    background: var(--fundo-escuro);
 }
- /* cabeçalho */
 
- #header{
+/* cabeçalho */
+#header {
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0; /* vertical */
+    bottom: 0;
     width: 300px;
     background-color: var(--fundo-menu-lateral);
     padding: 0 15px;
-    overflow-y: auto ;
+    overflow-y: auto;
     z-index: 99;
     transition: all ease-in-out 0.5s;
- }
+}
 
-
- #header .perfil img {
+#header .perfil img {
     margin: 15px auto;
     display: block;
     width: 120px;
     border: 2px solid var(--borda-clara);
     box-shadow: 0 0 5px var(--sombra-clara);
- }
+}
 
- #header .perfil h1 {
+#header .perfil h1 {
     font-size: 24px;
     margin: 25px;
     padding: 0;
     font-weight: 600;
     text-align: center;
     color: wheat;
- }
+}
 
- /* Redes Sociais */
-
- .perfil .social-links i {
+/* Redes Sociais */
+.perfil .social-links i {
     font-size: 18px;
     display: inline-block;
     background: transparent;
@@ -97,41 +91,33 @@ background: var(--fundo-escuro);
 
 .perfil .social-links a:hover,
 .social-links i:hover {
-    font-size: 18px;
-    display: inline-block;
     background: white;
     color: black;
-    margin-right: 5px;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    box-shadow: 0px 0px 5px 0px var(--sombra-clara);
 }
-a{
-    text-decoration: none;
 
+/* Links */
+a {
+    text-decoration: none;
 }
 
 /* menu mobile */
-
 .mobile-nav-toggle {
-    position: fixed; /* class */
-    top: 15px; /* superior */
+    position: fixed;
+    top: 15px;
     right: 15px;
-    z-index: 9999;/* sobreposiçao */
+    z-index: 9999;
     border: 0;
-    font-size: 26px; /* icone de texto */
-    transition: all 0.4s; /* efeito de transition */
+    font-size: 26px;
+    transition: all 0.4s;
     background: var(--cor-detalhes);
     color: var(--texto-claro);
     width: 40px;
     height: 40px;
-    border-radius: 50%; /* alinhar em horizontal */
+    border-radius: 50%;
     align-items: center;
     justify-content: center;
     display: inline-flex;
     cursor: pointer;
-
 }
 
 .mobile-nav-active {
@@ -142,13 +128,9 @@ a{
     left: 0;
 }
 
-/* ajuste para o corpo do conteudo */
-
 /* estrutura base - corpo */
-
 #main {
     margin-left: 300px;
-
 }
 
 .container {
@@ -156,37 +138,34 @@ a{
     padding-right: 30px;
 }
 
-
-
-
-
 /* menu responsivo */
-
-@media(max-width: 1199px) {
+@media (max-width: 1199px) {
     #header {
         left: -300px;
     }
+
     #main {
         margin-left: 0;
     }
+
     .container {
         padding-left: 12px;
-        padding-right: 12px ;
+        padding-right: 12px;
     }
 }
 
 /* menu header */
-
 .nav-menu * {
-    padding:0 ;
+    padding: 0;
     margin: 0;
     list-style: none;
 }
+
 .nav-menu {
     padding: 30px 0 0 0;
 }
 
-.nav-menu>ul>li {
+.nav-menu > ul > li {
     position: relative;
     white-space: nowrap;
     font-weight: 500;
@@ -209,21 +188,20 @@ a{
     padding-right: 10px;
     color: rgb(36, 57, 100);
     font-weight: 400;
-} 
+}
 
 .nav-menu a:hover,
-.nav-menu .active, /* click */
-.nav-menu .active:focus, 
-.nav-menu li:hover> a {
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover > a {
     text-decoration: none;
     color: var(--texto-claro);
 }
 
 .nav-menu a:hover i,
-.nav-menu .active i, /* click */
-.nav-menu .active:focus i, 
-.nav-menu li:hover> a i {
-
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover > a i {
     color: var(--cor-detalhes);
     font-weight: 400;
 }
@@ -231,9 +209,8 @@ a{
 /* Hero */
 #hero {
     width: 100%;
-    height: 100vh; /* view ocupe o contener */
-    background: url("../img/bg-hero.jpg.jpg") center; 
-    /* criar img na I.A */
+    height: 100vh;
+    background: url("../img/bg-hero.jpg") center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -251,24 +228,23 @@ a{
     z-index: 3;
     position: relative;
     min-width: 300px;
-    
 }
+
 #hero h2 {
     margin: 0;
     font-size: 100px;
-    font-weight: 900px;
-    line-height: 1; /* altura da linha */
+    font-weight: 900;
+    line-height: 1;
     color: #d1dddf;
-
 }
+
 h2 {
     background-color: #2d3c3d;
 }
 
-#hero p{
-
-columns: #fff;
-margin-bottom: 50px;
+#hero p {
+    color: #fff;
+    margin-bottom: 50px;
 }
 
 #hero p span {
@@ -276,23 +252,22 @@ margin-bottom: 50px;
     padding-bottom: 2px;
     letter-spacing: -1px;
     border-bottom: 3px solid #000000;
-    
 }
 
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
     #hero {
         background-attachment: fixed;
     }
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
     #hero {
         background-attachment: fixed;
     }
 }
 
-@media (max-width: 768px){
-    #hero  h2 {
+@media (max-width: 768px) {
+    #hero h2 {
         font-size: 60px;
         line-height: 1;
         margin-bottom: 45px;
@@ -303,27 +278,20 @@ margin-bottom: 50px;
     }
 }
 
-
-
-/* seções e titulos */
-
+/* seções e títulos */
 section {
     padding: 60px 0;
     overflow: hidden;
-    background:#755f8a; /* clara */
+    background: #755f8a;
 }
 
-.section-bg{
+.section-bg {
     background: #718b99;
     color: var(--texto-claro);
-
 }
-
-/* classe h2 */
 
 .section-title {
     padding-bottom: 30px;
-
 }
 
 .section-title h2 {
@@ -331,75 +299,73 @@ section {
     font-weight: 600;
     margin-bottom: 20px;
     position: relative;
-
 }
 
 .section-title h2::after {
-   content: "";
-   position: absolute;
-   background: #a9b0b1; 
-   width: 900px;
-   height: 3px;
-   display: block;
-   bottom: 0;
-   left: 0;
+    content: "";
+    position: absolute;
+    background: #a9b0b1;
+    width: 900px;
+    height: 3px;
+    display: block;
+    bottom: 0;
+    left: 0;
 }
 
 .section-title p {
     margin-bottom: 0;
 }
 
-
 /* sobre */
-
 .sobre .content h3 {
     color: #183357;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 39px;
     font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
     font-style: normal;
-  }
+}
 
 .sobre .content ul {
     list-style: none;
-    padding: 4;
-   
+    padding: 4px;
 }
+
 .sobre .content ul li {
     margin-bottom: 20px;
-   /*  display: ; */
-   align-items: center;
-   justify-content: flex-start;
+    align-items: center;
+    justify-content: flex-start;
 }
+
 .sobre .content ul strong {
     margin-right: 20px;
     color: black;
     font-weight: 700;
     letter-spacing: 6px;
 }
+
 .sobre .content ul i {
     margin-right: 10px;
     font-size: 20px;
 }
 
-/* conquistas// vendas */
+/* conquistas / vendas */
 .conquistas {
     padding-bottom: 30px;
-
 }
+
 .conquistas .count-box {
     padding: 30px;
     width: 100%;
 }
+
 .conquistas .count-box i {
     color: rgb(54, 41, 41);
     font-size: 44px;
     display: block;
-    line-height: 0;
     float: left;
-    /* line-height:; */
+    line-height: 0;
 }
+
 .conquistas .count-box span {
     font-size: 48px;
     color: var(--texto-claro);
@@ -408,29 +374,31 @@ section {
     font-weight: 700;
     margin-left: 60px;
 }
+
 .conquistas .count-box p {
     padding: 15px 0 0 0;
     margin: 0 0 0 60px;
     color: rgb(46, 37, 37);
-
 }
+
 .conquistas .count-box strong {
     font-weight: 800;
 }
-.conquistas .count-box i:hover, .conquistas .count-box span:hover {
+
+.conquistas .count-box i:hover,
+.conquistas .count-box span:hover {
     color: var(--fundo-claro);
 }
 
-/* vendas */ 
+/* vendas / skills */
 .skills .progress {
     height: 60px;
     display: block;
     background: none;
     border-radius: 0;
-
 }
 
-.skills .progress .skill{
+.skills .progress .skill {
     padding: 0;
     margin: 0 0 5px 0;
     text-transform: uppercase;
@@ -438,19 +406,25 @@ section {
     color: #183357;
     font-weight: 800;
     font-size: 16px;
-}
-.skills .progress .skill{
     font-style: normal;
-    float: right;
 }
+
 .skills .progress .skill .val {
-    font-style: normal;
     float: right;
     color: rgb(228, 220, 220);
     font-weight: 800;
     font-size: 16px;
+    font-style: normal;
 }
-.skills .progress-bar-bg{
+
+.skills .progress-bar-bg {
     background: rgb(141, 141, 141);
     height: 10px;
+}
+
+.skills .progress-bar {
+    height: 10px;
+    background: rgb(137, 174, 177);
+    transition: 5s;
+    width: 1px;
 }
